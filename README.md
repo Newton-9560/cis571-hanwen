@@ -13,7 +13,7 @@ docker pull cis5710/hw-base:latest
 
 And then run it to launch the *container*. This puts you inside an Ubuntu Linux command-line system with all of the tools installed. Launch the container with:
 ```
-docker run -it cis5710/hw-base:latest /bin/bash
+docker run -itd cis5710/hw-base:latest /bin/bash
 ```
 
 You should also configure Docker to [share a directory with your host machine](https://www.digitalocean.com/community/tutorials/how-to-share-data-between-the-docker-container-and-the-host) so that your files are saved when the container is terminated. We may need to make updates to the container image throughout the semester, so you will want to be able to restart your container (to obtain those updates) without losing your work.
